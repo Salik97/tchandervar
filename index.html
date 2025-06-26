@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>tchāndērvār — Edition I, Summer 2025</title>
   <style>
     body {
@@ -26,6 +26,42 @@
       font-style: italic;
       text-align: center;
       margin: 1.5em 0;
+    }
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 300px;
+      margin: 0 auto 2em;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .slides {
+      display: flex;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .slider-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .slider-button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      font-size: 1.5em;
     }
     .gallery {
       display: grid;
@@ -90,48 +126,17 @@
       font-weight: bold;
       cursor: pointer;
     }
-    .slider {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      margin: 0 auto 2em;
-      overflow: hidden;
-    }
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slides img {
-      width: 100%;
-      flex-shrink: 0;
-    }
-    .slider-buttons {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-    }
-    .slider-button {
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 0.5em 1em;
-      cursor: pointer;
-      font-size: 1.5em;
-    }
   </style>
 </head>
 <body>
 
-<!-- Lightbox container -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork">
-</div>
+<header>
+  <h1>tchāndērvār — Edition I, Summer 2025</h1>
+  <p class="quote">“It belongs to where it lives.”</p>
+  <p class="poem">چشمها را باید شست، جور دیگر باید دید<br>چترها را باید بست<br>زیر باران باید رفت — سهراب سپهری</p>
+</header>
 
-<!-- Slider container added with correct ID -->
+<!-- Slider -->
 <div class="slider" id="slideContainer">
   <div class="slides">
     <img src="images/slide1.jpg" alt="Slide 1">
@@ -144,6 +149,54 @@
   </div>
 </div>
 
+<section>
+  <h2>Letter from ‘tchāndērvār’</h2>
+  <p>‘tchandervar’ began with a question: what if art didn’t wait to be visited?<br>
+  It is an invitation — to witness stillness, to host beauty, and to live with art that listens.
+  This edition brings together works that deserve to rest not only in galleries, but in spaces that breathe.</p>
+</section>
+
+<section>
+  <h2>Catalogue of Works</h2>
+  <div class="gallery">
+    <div class="artwork">
+      <img src="images/khanqah.jpg" alt="Khanqah" onclick="openLightbox(this.src)">
+      <h4>Khanqah (Series)</h4>
+      <p>Gouache/poster on paper<br>20×12\", unframed<br>Available (prints too)</p>
+      <a href="https://wa.me/917006613891?text=I'm+interested+in+Khanqah+Series" class="inquire-button">Inquire via WhatsApp</a>
+    </div>
+    <div class="artwork">
+      <img src="images/jamia.jpg" alt="Jamia Quarters" onclick="openLightbox(this.src)">
+      <h4>Jamia Quarters</h4>
+      <p>Watercolor on paper<br>11.7×8.2\", unframed<br>Available (prints too)</p>
+      <a href="https://wa.me/917889939788?text=I'm+interested+in+Jamia+Quarters" class="inquire-button">Inquire via WhatsApp</a>
+    </div>
+    <div class="artwork">
+      <img src="images/sunrise.jpg" alt="Sunrise at Dal" onclick="openLightbox(this.src)">
+      <h4>Sunrise at Dal</h4>
+      <p>Acrylics/oils on canvas<br>51.6×48\", unstretched<br>Available (prints too)</p>
+      <a href="https://wa.me/917006613891?text=I'm+interested+in+Sunrise+at+Dal" class="inquire-button">Inquire via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact & Collaborations</h2>
+  <p>Email: <a href="mailto:alfaaz.2k20@gmail.com">alfaaz.2k20@gmail.com</a><br>
+     Phone: <a href="tel:+917006613891">+91 7006613891</a> / <a href="tel:+917889939788">+91 7889939788</a><br>
+     Instagram: <a href="https://instagram.com/alfaaz.2020" target="_blank">@alfaaz.2020</a></p>
+</section>
+
+<footer>
+  © 2025 tchāndērvār · An Alfaaz Collective
+</footer>
+
+<!-- Lightbox Script -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork view">
+</div>
+
 <script>
   function openLightbox(src) {
     document.getElementById('lightbox-img').src = src;
@@ -152,11 +205,9 @@
   function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
   }
-</script>
 
-<script>
   let slideIndex = 0;
-  const slides = document.querySelector("#slideContainer .slides");
+  const slides = document.querySelector(\"#slideContainer .slides\");
   const totalSlides = slides.children.length;
 
   function plusSlides(n) {
