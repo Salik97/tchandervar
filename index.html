@@ -4,35 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>tchāndērvār — Edition I, Summer 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Glacial+Indifference&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Glacial Indifference', sans-serif;
       background: linear-gradient(to bottom, #fdfaf5, #f3e9db);
       color: #2c2c2c;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      text-align: center;
     }
     header, section, footer {
       padding: 2em;
       max-width: 1000px;
       margin: auto;
     }
-    h1, h2, h3 {
-      text-align: center;
-      font-weight: normal;
+    h1 {
+      font-family: 'Yeseva One', serif;
+      font-size: 3em;
+      margin-bottom: 0;
     }
-    .quote, .poem {
+    .subheader {
+      display: flex;
+      justify-content: space-between;
       font-style: italic;
-      text-align: center;
-      margin: 1.5em 0;
+      margin-top: 0.5em;
+      font-size: 1.2em;
+    }
+    .quote {
+      font-style: italic;
+      margin: 2em 0 0.5em;
+      font-size: 1.3em;
+    }
+    .poet {
+      margin-top: 0;
+      font-size: 1em;
     }
     .slider {
       position: relative;
       width: 100%;
       max-width: 800px;
       height: 300px;
-      margin: 0 auto 2em;
+      margin: 2em auto;
       overflow: hidden;
       border-radius: 10px;
     }
@@ -87,9 +101,6 @@
       margin-bottom: 0.8em;
       cursor: pointer;
     }
-    .artwork h4 {
-      margin: 0.5em 0 0.2em;
-    }
     .inquire-button {
       display: inline-block;
       margin-top: 10px;
@@ -131,12 +142,15 @@
 <body>
 
 <header>
-  <h1>tchāndērvār — Edition I, Summer 2025</h1>
-  <p class="quote">“It belongs to where it lives.”</p>
-  <p class="poem">چشمها را باید شست، جور دیگر باید دید<br>چترها را باید بست<br>زیر باران باید رفت — سهراب سپهری</p>
+  <h1>tchāndērvār</h1>
+  <div class="subheader">
+    <span>“It belongs to where it lives.”</span>
+    <span>Edition I — Summer 2025</span>
+  </div>
+  <p class="quote">چشمها را باید شست، جور دیگر باید دید<br>چترها را باید بست<br>زیر باران باید رفت</p>
+  <p class="poet">— سهراب سپهری</p>
 </header>
 
-<!-- Slider -->
 <div class="slider" id="slideContainer">
   <div class="slides">
     <img src="images/slide1.jpg" alt="Slide 1">
@@ -152,46 +166,30 @@
 <section>
   <h2>Letter from ‘tchāndērvār’</h2>
   <p>‘tchandervar’ began with a question: what if art didn’t wait to be visited?<br>
-  It is an invitation — to witness stillness, to host beauty, and to live with art that listens.
+  It is an invitation — to witness stillness, to host beauty, and to live with art that listens.<br>
   This edition brings together works that deserve to rest not only in galleries, but in spaces that breathe.</p>
 </section>
 
 <section>
-  <h2>Catalogue of Works</h2>
-  <div class="gallery">
-    <div class="artwork">
-      <img src="images/khanqah.jpg" alt="Khanqah" onclick="openLightbox(this.src)">
-      <h4>Khanqah (Series)</h4>
-      <p>Gouache/poster on paper<br>20×12", unframed<br>Available (prints too)</p>
-      <a href="https://wa.me/917006613891?text=I'm+interested+in+Khanqah+Series" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-    <div class="artwork">
-      <img src="images/jamia.jpg" alt="Jamia Quarters" onclick="openLightbox(this.src)">
-      <h4>Jamia Quarters</h4>
-      <p>Watercolor on paper<br>11.7×8.2", unframed<br>Available (prints too)</p>
-      <a href="https://wa.me/917889939788?text=I'm+interested+in+Jamia+Quarters" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-    <div class="artwork">
-      <img src="images/sunrise.jpg" alt="Sunrise at Dal" onclick="openLightbox(this.src)">
-      <h4>Sunrise at Dal</h4>
-      <p>Acrylics/oils on canvas<br>51.6×48", unstretched<br>Available (prints too)</p>
-      <a href="https://wa.me/917006613891?text=I'm+interested+in+Sunrise+at+Dal" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Contact & Collaborations</h2>
-  <p>Email: <a href="mailto:alfaaz.2k20@gmail.com">alfaaz.2k20@gmail.com</a><br>
-     Phone: <a href="tel:+917006613891">+91 7006613891</a> / <a href="tel:+917889939788">+91 7889939788</a><br>
-     Instagram: <a href="https://instagram.com/alfaaz.2020" target="_blank">@alfaaz.2020</a></p>
+  <h2>Art with Purpose</h2>
+  <p>tchandervar connects local artists with individuals who want to
+  enhance their spaces with unique, high-quality artwork. We curate a
+  diverse collection of paintings and other art forms, carefully chosen to
+  fit a variety of environments. Clients can explore this collection or
+  collaborate with us to find pieces that best suit their space, whether it's
+  a residence, a hotel, office, or restaurant.</p>
+  <p>Our service goes beyond just selling art — we provide personalized recommendations to create the
+  perfect ambiance for each setting. Once an individual selects a piece,
+  we handle the entire process, from facilitating the purchase to
+  managing logistics like delivery and installation.</p>
+  <p>In addition to providing beautiful art, tchandervar helps clients support local artists,
+  fostering a vibrant creative community.</p>
 </section>
 
 <footer>
   © 2025 tchāndērvār · An Alfaaz Collective
 </footer>
 
-<!-- Lightbox and Slider Script -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close">&times;</span>
   <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork view">
