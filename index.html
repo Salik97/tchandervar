@@ -23,23 +23,27 @@
     h1 {
       font-family: 'Yeseva One', serif;
       font-size: 3em;
-      margin-bottom: 0;
+      margin-bottom: 0.2em;
     }
     .subheader {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-style: italic;
-      margin-top: 0.5em;
       font-size: 1.2em;
+      margin: 0 auto 1em;
+      max-width: 800px;
+      padding: 0 2em;
     }
     .quote {
       font-style: italic;
-      margin: 2em 0 0.5em;
       font-size: 1.3em;
+      margin-bottom: 0.3em;
     }
     .poet {
       margin-top: 0;
       font-size: 1em;
+      font-style: italic;
     }
     .slider {
       position: relative;
@@ -77,65 +81,8 @@
       cursor: pointer;
       font-size: 1.5em;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 2em;
-    }
-    .artwork {
-      background: #fffefb;
-      border: 1px solid #e4d9c2;
-      padding: 1em;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .artwork:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    }
-    .artwork img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 0.8em;
-      cursor: pointer;
-    }
-    .inquire-button {
-      display: inline-block;
-      margin-top: 10px;
-      background: #25D366;
-      color: white;
-      padding: 0.4em 1em;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .lightbox {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      padding-top: 60px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    .lightbox-content {
-      margin: auto;
-      display: block;
-      max-width: 90%;
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: #fff;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
+    section p {
+      text-align: center;
     }
   </style>
 </head>
@@ -169,6 +116,8 @@
   It is an invitation — to witness stillness, to host beauty, and to live with art that listens.<br>
   This edition brings together works that deserve to rest not only in galleries, but in spaces that breathe.</p>
 </section>
+
+
 
 <section>
   <h2>Art with Purpose</h2>
