@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>tchandervar — Edition I, Summer 2025</title>
+  <title>tchāndērvār</title>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Glacial+Indifference&display=swap" rel="stylesheet">
   <style>
     body {
@@ -25,24 +25,20 @@
       font-size: 3em;
       margin-bottom: 0.2em;
     }
-    .subheader {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .subtitle {
       font-style: italic;
       font-size: 1.2em;
-      margin: 0 auto 1em;
-      max-width: 800px;
-      padding: 0 2em;
+      margin-top: 0.5em;
     }
     .quote {
       font-style: italic;
-      font-size: 0.9em;
-      margin-bottom: 0.3em;
+      font-size: 1em;
+      margin-top: 1em;
+      margin-bottom: 0;
     }
     .poet {
-      margin-top: 0;
-      font-size: 0.7em;
+      margin-top: 0.3em;
+      font-size: 0.9em;
       font-style: italic;
     }
     .slider {
@@ -81,46 +77,39 @@
       cursor: pointer;
       font-size: 1.5em;
     }
-    section p {
-      text-align: center;
+    .group-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
+      font-size: 1.5em;
+    }
+    .group-nav a {
+      text-decoration: none;
+      color: #2c2c2c;
+    }
+    .group-nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>tchāndērvār</h1>
-  <div class="subheader">
-    <span>“It belongs to where it lives.”</span>
-    <span>Edition I — Summer 2025</span>
-  </div>
-  <p class="quote">چشمها را باید شست، جور دیگر باید دید<br>چترها را باید بست<br>زیر باران باید رفت</p>
+  <h1 style="margin-bottom: 0.1em;">tchāndērvār<br><span class="subtitle">Edition I — Summer 2025</span></h1>
+  <div class="subtitle">“It belongs to where it lives.”</div>
+  <p class="quote">چشمها را باید شست، جور دیگر باید دید</p>
+  <p class="quote">چترها را باید بست زیر باران باید رفت</p>
   <p class="poet">— سهراب سپهری</p>
 </header>
 
-<div class="slider" id="slideContainer">
-  <div class="slides">
-    <img src="images/slide1.jpg" alt="Slide 1">
-    <img src="images/slide2.jpg" alt="Slide 2">
-    <img src="images/slide3.jpg" alt="Slide 3">
-  </div>
-  <div class="slider-buttons">
-    <button class="slider-button" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="slider-button" onclick="plusSlides(1)">&#10095;</button>
-  </div>
-</div>
-
-<section>
-  <h2>Letter from ‘tchandervar’</h2>
-  <p>‘tchandervar’ began with a question: what if art didn’t wait to be visited?<br>
-  It is an invitation — to witness stillness, to host beauty, and to live with art that listens.<br>
-  This edition brings together works that deserve to rest not only in galleries, but in spaces that breathe.</p>
-</section>
-
-<!-- Icon intro before slider -->
-<div class="section-intro-icons">
-  <p style="font-size: 2em;">🖼️ ✨</p>
-  <p style="font-style: italic; font-size: 1em;">a glimpse into the edition</p>
+<!-- Group Navigation Icons -->
+<div class="group-nav">
+  <a href="#groupA" title="Group A">🖼️</a>
+  <a href="#groupB" title="Group B">🌄</a>
+  <a href="#groupC" title="Group C">🏙️</a>
+  <a href="#groupD" title="Group D">🎭</a>
+  <a href="#groupE" title="Group E">🌌</a>
 </div>
 
 <!-- Slider -->
@@ -135,99 +124,3 @@
     <button class="slider-button" onclick="plusSlides(1)">&#10095;</button>
   </div>
 </div>
-
-<!-- Catalogue of Works -->
-<section>
-  <h2>Catalogue of Works</h2>
-
-  <h3>Group A — Cultural Spaces</h3>
-  <div class="gallery">
-    <div class="artwork">
-      <img src="images/khanqah.jpg" alt="Khanqah" onclick="openLightbox(this.src)">
-      <h4>Khanqah (Series)</h4>
-      <p>Gouache/poster on paper<br>20×12", unframed<br>Available (prints too)</p>
-      <a href="https://wa.me/917006613891?text=I'm+interested+in+Khanqah+Series" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-    <div class="artwork">
-      <img src="images/jamia.jpg" alt="Jamia Quarters" onclick="openLightbox(this.src)">
-      <h4>Jamia Quarters</h4>
-      <p>Watercolor on paper<br>11.7×8.2", unframed<br>Available (prints too)</p>
-      <a href="https://wa.me/917889939788?text=I'm+interested+in+Jamia+Quarters" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-  </div>
-
-  <h3>Group B — Landscapes</h3>
-  <div class="gallery">
-    <div class="artwork">
-      <img src="images/sunrise.jpg" alt="Sunrise at Dal" onclick="openLightbox(this.src)">
-      <h4>Sunrise at Dal</h4>
-      <p>Acrylics/oils on canvas<br>51.6×48", unstretched<br>Available (prints too)</p>
-      <a href="https://wa.me/917006613891?text=I'm+interested+in+Sunrise+at+Dal" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-  </div>
-
-  <!-- Placeholder groups -->
-  <h3>Group C — [Add Title]</h3>
-  <div class="gallery">
-    <!-- Add artworks here -->
-  </div>
-
-  <h3>Group D — [Add Title]</h3>
-  <div class="gallery">
-    <!-- Add artworks here -->
-  </div>
-
-  <h3>Group E — [Add Title]</h3>
-  <div class="gallery">
-    <!-- Add artworks here -->
-  </div>
-</section>
-
-
-
-<section>
-  <h2>Art with Purpose</h2>
-  <p>tchandervar connects local artists with individuals who want to
-  enhance their spaces with unique, high-quality artwork. We curate a
-  diverse collection of paintings and other art forms, carefully chosen to
-  fit a variety of environments. Clients can explore this collection or
-  collaborate with us to find pieces that best suit their space, whether it's
-  a residence, a hotel, office, or restaurant.</p>
-  <p>Our service goes beyond just selling art — we provide personalized recommendations to create the
-  perfect ambiance for each setting. Once an individual selects a piece,
-  we handle the entire process, from facilitating the purchase to
-  managing logistics like delivery and installation.</p>
-  <p>In addition to providing beautiful art, tchandervar helps clients support local artists,
-  fostering a vibrant creative community.</p>
-</section>
-
-<footer>
-  © 2025 tchandervar · An Alfaaz Collective
-</footer>
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork view">
-</div>
-
-<script>
-  function openLightbox(src) {
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').style.display = 'block';
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-
-  let slideIndex = 0;
-  const slides = document.querySelector("#slideContainer .slides");
-  const totalSlides = slides.children.length;
-
-  function plusSlides(n) {
-    slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  }
-</script>
-
-</body>
-</html>
