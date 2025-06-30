@@ -37,12 +37,12 @@
     }
     .quote {
       font-style: italic;
-      font-size: 1.3em;
+      font-size: 0.9em;
       margin-bottom: 0.3em;
     }
     .poet {
       margin-top: 0;
-      font-size: 1em;
+      font-size: 0.7em;
       font-style: italic;
     }
     .slider {
@@ -89,7 +89,7 @@
 <body>
 
 <header>
-  <h1>tchandervar</h1>
+  <h1>tchāndērvār</h1>
   <div class="subheader">
     <span>“It belongs to where it lives.”</span>
     <span>Edition I — Summer 2025</span>
@@ -117,35 +117,72 @@
   This edition brings together works that deserve to rest not only in galleries, but in spaces that breathe.</p>
 </section>
 
+<!-- Icon intro before slider -->
+<div class="section-intro-icons">
+  <p style="font-size: 2em;">🖼️ ✨</p>
+  <p style="font-style: italic; font-size: 1em;">a glimpse into the edition</p>
+</div>
+
+<!-- Slider -->
+<div class="slider" id="slideContainer">
+  <div class="slides">
+    <img src="images/slide1.jpg" alt="Slide 1">
+    <img src="images/slide2.jpg" alt="Slide 2">
+    <img src="images/slide3.jpg" alt="Slide 3">
+  </div>
+  <div class="slider-buttons">
+    <button class="slider-button" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="slider-button" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+</div>
+
+<!-- Catalogue of Works -->
 <section>
   <h2>Catalogue of Works</h2>
 
-  <h3>Landscapes</h3>
-  <div class="gallery">
-    <div class="artwork">
-      <img src="images/sunrise.jpg" alt="Sunrise at Dal" onclick="openLightbox(this.src)">
-      <h4>Sunrise at Dal</h4>
-      <p>Acrylics/oils on canvas<br>51.6×48\", unstretched<br>Available (prints too)</p>
-      <a href="https://wa.me/917006613891?text=I'm+interested+in+Sunrise+at+Dal" class="inquire-button">Inquire via WhatsApp</a>
-    </div>
-  </div>
-
-  <h3>Cultural Spaces</h3>
+  <h3>Group A — Cultural Spaces</h3>
   <div class="gallery">
     <div class="artwork">
       <img src="images/khanqah.jpg" alt="Khanqah" onclick="openLightbox(this.src)">
       <h4>Khanqah (Series)</h4>
-      <p>Gouache/poster on paper<br>20×12\", unframed<br>Available (prints too)</p>
+      <p>Gouache/poster on paper<br>20×12", unframed<br>Available (prints too)</p>
       <a href="https://wa.me/917006613891?text=I'm+interested+in+Khanqah+Series" class="inquire-button">Inquire via WhatsApp</a>
     </div>
     <div class="artwork">
       <img src="images/jamia.jpg" alt="Jamia Quarters" onclick="openLightbox(this.src)">
       <h4>Jamia Quarters</h4>
-      <p>Watercolor on paper<br>11.7×8.2\", unframed<br>Available (prints too)</p>
+      <p>Watercolor on paper<br>11.7×8.2", unframed<br>Available (prints too)</p>
       <a href="https://wa.me/917889939788?text=I'm+interested+in+Jamia+Quarters" class="inquire-button">Inquire via WhatsApp</a>
     </div>
   </div>
+
+  <h3>Group B — Landscapes</h3>
+  <div class="gallery">
+    <div class="artwork">
+      <img src="images/sunrise.jpg" alt="Sunrise at Dal" onclick="openLightbox(this.src)">
+      <h4>Sunrise at Dal</h4>
+      <p>Acrylics/oils on canvas<br>51.6×48", unstretched<br>Available (prints too)</p>
+      <a href="https://wa.me/917006613891?text=I'm+interested+in+Sunrise+at+Dal" class="inquire-button">Inquire via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Placeholder groups -->
+  <h3>Group C — [Add Title]</h3>
+  <div class="gallery">
+    <!-- Add artworks here -->
+  </div>
+
+  <h3>Group D — [Add Title]</h3>
+  <div class="gallery">
+    <!-- Add artworks here -->
+  </div>
+
+  <h3>Group E — [Add Title]</h3>
+  <div class="gallery">
+    <!-- Add artworks here -->
+  </div>
 </section>
+
 
 
 <section>
@@ -165,7 +202,7 @@
 </section>
 
 <footer>
-  © 2025 tchāndērvār · An Alfaaz Collective
+  © 2025 tchandervar · An Alfaaz Collective
 </footer>
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
